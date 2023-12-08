@@ -148,12 +148,14 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 400px;
+  /* width: 400px; */
   height: 140px;
+  width: 33.3%;
 }
 .table {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .address h3 {
   color: var(--neutral-04100, #6c7275);
@@ -176,7 +178,6 @@ html {
 /* 4 */
 
 .registration {
-  /* width: 350px; */
   height: 40px;
   width: 600px;
 }
@@ -196,6 +197,9 @@ html {
   display: flex;
   gap: 4rem;
   margin-top: 2rem;
+}
+.dating textarea {
+  width: 600px;
 }
 .message {
   color: #ffff;
@@ -223,14 +227,17 @@ html {
   height: 200px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .minibox {
   background: var(--neutral-02100, #f3f5f7);
   width: 150px;
   height: 150px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 25%;
 }
 .minibox h3 {
   color: var(--neutral-07100, #141718);
@@ -254,6 +261,7 @@ html {
   background: var(--neutral-07100, #141718);
   padding: 80px 160px 32px 160px;
   height: 250px;
+  margin-top: 4rem;
 }
 .gift {
   display: flex;
@@ -323,4 +331,86 @@ html {
 }
 .social-media {
   gap: 20px;
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 8px;
+  }
+  .item-list {
+    display: none;
+  }
+  .words h1 {
+    width: 600px;
+  }
+  .words p {
+    width: 600px;
+  }
+  .customer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .address {
+    width: 100%;
+  }
+  .dating {
+    flex-direction: column-reverse;
+  }
+  .minibox {
+    width: 50%;
+  }
+  .gift {
+    flex-direction: column;
+  }
+  .footer-list {
+    flex-direction: column;
+  }
+  .decoration {
+    flex-direction: column;
+    text-align: center;
+  }
+  .backofblack{
+    height: 450px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 6px;
+  }
+  .item-list {
+    display: none;
+  }
+  .words h1 {
+    width: 300px;
+  }
+  .words p {
+    width: 300px;
+  }
+  .customer img {
+    width: 311px;
+    height: 311px;
+  }
+  .background-color {
+    width: 311px;
+    height: 311px;
+  }
+  .background-color p {
+    width: 200px;
+  }
+  .dating img {
+    width: 311px;
+    height: 311px;
+  }
+  .registration {
+    height: 40px;
+    width: 300px;
+  }
+  .dating textarea {
+    width: 300px;
+  }
+  .backofblac{
+    /* height: 500px; */
+  }
 }
